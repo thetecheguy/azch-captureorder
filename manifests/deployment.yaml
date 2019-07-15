@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: captureorder
-          image: acraksworkshop.azurecr.io/captureorder # replace with your own repository
+          image: acraksworkshop.azurecr.io/captureorder:cj1
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
