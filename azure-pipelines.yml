@@ -86,7 +86,7 @@ stages:
               imagePullSecrets: | # this automatically injects the imagePullSecret into your Kubernetes deployment configuration
                 acr-auth
               containers: |
-                $(imageRepository):$(tag)
+                acraksworkshop.azurecr.io/captureorder:$(tag)
 
           - task: KubernetesManifest@0
             displayName: Patch the deployment environment variables
